@@ -1,0 +1,26 @@
+이것 저것 설치하고
+연결
+putty 
+>serial>장치관리자에 연결 확인된 포트 번호를 Serial line에 치고
+연결
+
+help 치면 사용할 수 있는 명령어 쭉 나옴
+ 
+
+AVR Studio
+
+int main()
+{
+	*(char *)0x3A = 0xff;
+	*(char *)0x3B = 0xff;
+}
+
+
+or 
+
+#include<avr/io.h>
+int main()
+{
+	DDRA = 0xff;
+	PORTA = 0xff;
+}
